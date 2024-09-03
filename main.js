@@ -7,8 +7,8 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Pergunta 1",
-        alternativas: ["aternativa1","alternativa2","alternativa3"]
+        enunciado: "Qual a data da independênica do Brasil?",
+        alternativas: ["07 de Setembro","15 de Novembro","21 de Abril"]
     },
     {
         enunciado: "Pergunta 2",
@@ -25,3 +25,30 @@ const perguntas = [
 
 
 ];
+
+
+let atual = 0;
+let perguntaAtual;
+
+function mostraPergunta(){
+perguntaAtual =  perguntas[atual];
+caixaPergunta.textContent = perguntaAtual.enunciado;
+
+}
+
+mostraPergunta();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
